@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Cuenta</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!-- link a pagina boxicons -->
+</head>
+<body>
+    
+    <div class="wrapper">
+        <form action="registrarse.php" method="post"><!-- Formulario de registro -->
+            <h1>Nueva Cuenta</h1>
+            <div class="input-box"><!-- contenedores de nombre -->
+                <input type="text" name="nombre" placeholder="Primer Nombre" required>
+                <i class='bx bxs-user'></i><!-- icono de usuario -->
+            </div>
+            <div class="input-box"><!-- contenedores de Apellido -->
+                <input type="text" name="apellido" placeholder="Primer Apellido" required>
+                <i class='bx bxs-user'></i><!-- icono de usuario -->
+            </div>
+            <div class="input-box"><!-- contenedores de Email -->
+                <input type="email" name="correo" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i><!-- icono de correo -->
+            </div>
+            <div class="input-box"><!-- contenedores de usuario -->
+                <input type="text" name="usuario" placeholder="Nombre de usuario" required>
+                <i class='bx bxs-user'></i><!-- icono de usuario -->
+            </div>
+            <div class="input-box"><!-- contenedores de contraseña -->
+                <input type="password" name="contrasena" placeholder="Contraseña" required>
+                <i class='bx bxs-lock-alt' ></i><!-- icono contraseña -->
+            </div>
+
+            <button type="submit" name= "registro" class="btn">Registrarse</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
